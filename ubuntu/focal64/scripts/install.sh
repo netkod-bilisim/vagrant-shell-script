@@ -54,6 +54,10 @@ wget https://raw.githubusercontent.com/netkod-bilisim/vagrant-shell-script/maste
 bash postfix-install.sh
 rm postfix-install.sh
 
+wget https://raw.githubusercontent.com/netkod-bilisim/vagrant-shell-script/master/ubuntu/focal64/scripts/mailcatcher-install.sh
+bash mailcatcher-install.sh
+rm mailcatcher-install.sh
+
 echo "127.0.0.1 local.$DIR.$DOMAIN" >> /etc/hosts
 
 apt-get autoremove -y;
