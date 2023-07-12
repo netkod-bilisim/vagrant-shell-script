@@ -34,6 +34,18 @@ wget https://raw.githubusercontent.com/netkod-bilisim/vagrant-shell-script/maste
 bash composer-install.sh $PHP_VERSION
 rm composer-install.sh
 
+wget https://raw.githubusercontent.com/netkod-bilisim/vagrant-shell-script/master/ubuntu/focal64/scripts/mysql-install.sh
+bash mysql-install.sh
+rm mysql-install.sh
+
+wget https://raw.githubusercontent.com/netkod-bilisim/vagrant-shell-script/master/ubuntu/focal64/scripts/mongodb-install.sh
+bash mongodb-install.sh
+rm mongodb-install.sh
+
+wget https://raw.githubusercontent.com/netkod-bilisim/vagrant-shell-script/master/ubuntu/focal64/scripts/phpmyadmin-install.sh
+bash phpmyadmin-install.sh
+rm phpmyadmin-install.sh
+
 echo "127.0.0.1 local.$DIR.$DOMAIN" >> /etc/hosts
 
 apt-get autoremove -y;

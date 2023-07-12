@@ -20,5 +20,6 @@ Vagrant.configure("2") do |config|
 	    "PHP_VERSION" => "7.4",
 	    "DOMAIN" => "example-domain.com",
 	    "DIR" => "api",
+	    "DB_PASSWORD" => "secret"
 	}
 end
