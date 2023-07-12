@@ -70,6 +70,10 @@ wget https://raw.githubusercontent.com/netkod-bilisim/vagrant-shell-script/maste
 bash memcached-install.sh
 rm memcached-install.sh
 
+wget https://raw.githubusercontent.com/netkod-bilisim/vagrant-shell-script/master/ubuntu/focal64/scripts/puppeteer-install.sh
+bash puppeteer-install.sh
+rm puppeteer-install.sh
+
 echo "127.0.0.1 local.$DIR.$DOMAIN" >> /etc/hosts
 
 apt-get autoremove -y;
