@@ -58,6 +58,10 @@ wget https://raw.githubusercontent.com/netkod-bilisim/vagrant-shell-script/maste
 bash mailcatcher-install.sh
 rm mailcatcher-install.sh
 
+wget https://raw.githubusercontent.com/netkod-bilisim/vagrant-shell-script/master/ubuntu/focal64/scripts/supervisor-install.sh
+bash supervisor-install.sh
+rm supervisor-install.sh
+
 echo "127.0.0.1 local.$DIR.$DOMAIN" >> /etc/hosts
 
 apt-get autoremove -y;
