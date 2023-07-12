@@ -46,6 +46,10 @@ wget https://raw.githubusercontent.com/netkod-bilisim/vagrant-shell-script/maste
 bash phpmyadmin-install.sh
 rm phpmyadmin-install.sh
 
+wget https://raw.githubusercontent.com/netkod-bilisim/vagrant-shell-script/master/ubuntu/focal64/scripts/nodejs-install.sh
+bash nodejs-install.sh
+rm nodejs-install.sh
+
 echo "127.0.0.1 local.$DIR.$DOMAIN" >> /etc/hosts
 
 apt-get autoremove -y;
